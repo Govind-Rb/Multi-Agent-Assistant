@@ -45,52 +45,6 @@ Currently, the system contains:
                      FINAL ANSWER
 ```
 
-## How It Works
-
-For a mathematical query:
-
-```text
-User: "Multiply 37 and 18"
-        ↓
-Supervisor Agent
-        ↓
-LLM selects "calculator"
-        ↓
-Calculator Agent
-        ↓
-LLM selects multiply tool
-        ↓
-Arguments generated:
-a = 37
-b = 18
-        ↓
-Python tool executes
-        ↓
-666
-        ↓
-Reviewer Agent
-        ↓
-Final Answer: 666
-```
-
-For a general question:
-
-```text
-User: "What is Agentic AI?"
-        ↓
-Supervisor Agent
-        ↓
-LLM selects "research"
-        ↓
-Research Agent
-        ↓
-LLM generates response
-        ↓
-Reviewer Agent
-        ↓
-Final Answer
-```
-
 ## Key Concepts Demonstrated
 
 This project was built to understand the core building blocks of Agentic AI systems:
